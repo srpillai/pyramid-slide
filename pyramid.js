@@ -1,4 +1,16 @@
+/*
+This is part of LaunchCode Unit-3 class for front-end development.
 
+Toward the end of World 1-1 in Nintendo’s Super Mario Brothers, 
+Mario must ascend a "half-pyramid" of blocks before leaping (if 
+he wants to maximize his score) toward a flag pole. 
+
+The pyrmaid-slide builds the half-pyramid in JavaScript.
+User can select the pyramid height and pyramid building shape.
+
+Created by Radhakrishnan Pillai for LaunchCode Unit-3.
+
+*/
 
 var heightElem = document.getElementById("height");
 var formElem = document.getElementById("draw-form");
