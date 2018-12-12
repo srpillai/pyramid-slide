@@ -31,24 +31,39 @@ Created by Radhakrishnan Pillai for LaunchCode Unit-3.
 <body>
     <h1>Pyramid Slide</h1>
 
-    <p>When you say</p>
-    <p><strong>Draw a pyramid</strong></p>
-    <p>I say:</p>
-    <br>
+   <p></p>
+   <p></p>
 
-    <form id="draw-form">
-        <label>
-            How high?
-            <input type="text" id="height"/>
-            <label class="error-message">
-                <!-- If there was a user error, we will put a message in here -->
-            </label>
-        </label>
-        <br><br>
-        <input type="submit" value="Draw a pyramid"/>
-    </form>
+  
 
-    <br><br>
+   <form id="draw-form">
+       
+   </form>
+
+    <p></p>
+    <p></p>
+
+    <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="10" class="slider" id="myRange">
+        <p>Height: <span id="demo"></span></p>
+    </div>
+      
+      
+
+      <p></p>
+      <p></p>
+
+      <select id="mySel">
+        <option value="#">#</option>
+        <option value="$">$</option>
+        <option value="@">@</option>
+        <option value="X">X</option>
+      </select>
+      
+      
+      <label id="myLbl" for="mySel">
+      </label>
+
 
     <div id="pyramid"></div>
 

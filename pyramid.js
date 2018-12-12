@@ -82,7 +82,34 @@ function clearError(message) {
     
 }
 
+//test Pyrmaid slider
 
+
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+      
+      
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+        drawPyramid(this.value);
+        
+      }
+
+    //symbol selection
+
+    var sel = document.getElementById('mySel');
+    var lbl = document.getElementById('myLbl');
+    var symbol = "#";
+   
+    sel.onchange = function(){
+      lbl.innerHTML = this.options[this.selectedIndex].value;
+      symbol = lbl.innerHTML;
+      drawPyramid(output.innerHTML)
+      
+    };
+    
+// end test
 
 /**
  * drawPyramid
@@ -108,7 +135,7 @@ function drawPyramid(height) {
             rowStr += spaceChar;
         }
         for (var i = 0; i < numBricks; i++) {
-            rowStr += "#";
+            rowStr += symbol;
         }
 
         // make a <p> element for this row, and insert it into the #pyramid container
