@@ -12,11 +12,13 @@ Created by Radhakrishnan Pillai for LaunchCode Unit-3.
         #pyramid {
             line-height: 0;
             font-size: 30px;
+            color: blueviolet;
         }
 
         body {
             font-family: "Courier New", monospace;
             text-align: center;
+            background-color: antiquewhite;
         }
 
         .invalid-field {
@@ -26,6 +28,20 @@ Created by Radhakrishnan Pillai for LaunchCode Unit-3.
         .error-message {
             color: red;
         }
+
+        .centerDiv{
+
+        width: 40%;
+        height: auto;
+        margin: 0 auto;
+        
+        }
+
+        .slidecontainer {
+
+            margin-top: auto;
+        }
+
     </style>
 </head>
 <body>
@@ -34,7 +50,7 @@ Created by Radhakrishnan Pillai for LaunchCode Unit-3.
    <p></p>
    <p></p>
 
-  
+<div class = "centerDiv">   
 
    <form id="draw-form">
        
@@ -59,7 +75,7 @@ Created by Radhakrishnan Pillai for LaunchCode Unit-3.
         <option value="@">@</option>
         <option value="X">X</option>
       </select>
-      
+     
       
       <label id="myLbl" for="mySel">
       </label>
@@ -68,5 +84,7 @@ Created by Radhakrishnan Pillai for LaunchCode Unit-3.
     <div id="pyramid"></div>
 
     <script src="pyramid.js"></script>
+
+</div>
 </body>
 </html>
